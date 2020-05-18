@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-a
+  labels:
+    app: test
+    type: front-end
+spec:
+  containers:
+    - name: pod-a-front
+      image: alejandro180192/openapi-doc:latest
+  nodeSelector: 
+    nodename: node-a
+
