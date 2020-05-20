@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-d
+  labels:
+    app: test
+    type: backend
+    name: test
+spec:
+  containers:
+    - name: test-backend-container
+      image: alejandro180192/openapi-back:latest
+  nodeSelector: 
+    nodename: node-b
+
+

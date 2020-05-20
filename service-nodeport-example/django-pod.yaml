@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: django-pod
+  labels:
+    app: openapi
+    type: backend
+spec:
+  containers:
+    - name: django-container
+      image: alejandro180192/openapi-back:latest
+  nodeSelector: 
+    nodename: node-b
+
+

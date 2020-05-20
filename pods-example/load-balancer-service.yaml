@@ -3,13 +3,13 @@ kind: Service
 metadata:
   name: node-port-service
   labels:
-    app: openapi
+    app: test
 spec:
-  type: NodePort
+  type: loadBalancer
   ports: 
     - nodePort: 32000
       port: 80
       targetPort: 80
   selector: 
-    app: openapi
+    app: test
     type: front-end

@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: pod-a
+  name: angular-pod
   labels:
-    app: test
-    type: front-end
+    app: openapi
+    type: frontend
 spec:
   containers:
-    - name: pod-a-front
+    - name: angular-container
       image: alejandro180192/openapi-front:latest
   nodeSelector: 
     nodename: node-a
